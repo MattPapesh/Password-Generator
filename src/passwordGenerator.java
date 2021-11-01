@@ -1,4 +1,4 @@
-public class passwordGen 
+public class passwordGenerator 
 {	
 	// Class represents an interval for possible character ID #s
 	private class ID_Range

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main 
 {
-	static passwordGen generator = new passwordGen();
+	static passwordGenerator generator = new passwordGenerator();
 	
 	public static void main(String[] args)
 	{
