@@ -1,3 +1,4 @@
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main 
@@ -6,8 +7,13 @@ public class Main
 	
 	public static void main(String[] args)
 	{
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Password:	" + generator.generatePassword(scanner.next()));
-		scanner.close();
+		try
+		{
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("Password:	" + generator.generatePassword(scanner.next()));
+			scanner.close();
+		}
+		catch(NoSuchElementException e) {}
+		catch(IllegalStateException e) {}
 	}
 }
